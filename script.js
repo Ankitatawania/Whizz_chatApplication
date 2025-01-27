@@ -4,6 +4,7 @@ let chatContainer=document.querySelector(".chat-area")
 let resetbtn = document.querySelector(".reset")
 let botName = "EassyAssist"; 
 let botImagePath = "assets/EasyAssist.png"; 
+const API_KEY ="AIzaSyDjmpMWgWkseqCqa7TbbmsqPIbAPaWrqjQ";
 
 //background image change function
 const backgroundItems = document.querySelectorAll('.background-options li');
@@ -73,7 +74,7 @@ botItems.forEach((item) => {
 });
 
 
-const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDjmpMWgWkseqCqa7TbbmsqPIbAPaWrqjQ "
+const Api_Url=`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY} `
 
 
 
