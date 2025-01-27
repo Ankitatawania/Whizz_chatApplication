@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="app-intro">
+                <i class="fa-brands fa-rocketchat"></i>
+                <h1>Whizz</h1>
+            </div>
+            
+           <div class="welcome-section">
+                <h2>Welcome!</h2>
+                <p>Chat with your favorite bots from below.</p>
+            </div>
+            <ul class="bot-list">
+                <li class="bot-item">
+                    <div class="bot-icon">
+                        <img src="/assets/EasyAssist.png" alt="botImage">
+                    </div>
+                    <div class="bot-details" id="EasyAssist" >
+                        <h3>EasyAssist</h3>
+                        <p>It assists with simple tasks, provides clear and concise information.</p>
+                    </div>
+                    
+                </li>
+                <li class="bot-item">
+                    <div class="bot-icon">
+                        <img src="/assets/CheerGuide.png" id="CheerGuide" alt="botImage" >
+                    </div>
+                    <div class="bot-details" >
+                        <h3>CheerGuide</h3>
+                        <p>It is empathetic and always there to offer emotional support and encouragement.</p>
+                    </div>
+                </li>
+                <li class="bot-item">
+                    <div class="bot-icon">
+                        <img src="/assets/WiseWhiz.png" id = "WiseWhiz" alt="botImage" >
+                    </div>
+                    <div class="bot-details" >
+                        <h3>WiseWhiz</h3>
+                        <p>WiseWhiz is your go-to for all things like historical facts, or complex concepts.</p>
+                    </div>
+                </li><li class="bot-item">
+                    <div class="bot-icon">
+                        <img src="/assets/GiggleBot.png" id="GiggleBot" alt="botImage" >
+                    </div>
+                    <div class="bot-details">
+                        <h3>GiggleBot</h3>
+                        <p>It is a playful digital friend that uses humor to keep conversations lively.</p>
+                    </div>
+                </li>
+                <li class="bot-item">
+                    <div class="bot-icon">
+                        <img src="/assets/ImagiMuse.png" id="ImagiMuse" alt="botImage">
+                    </div>
+                    <div class="bot-details" >
+                        <h3>ImagiMuse</h3>
+                        <p>ImagiMuse loves to brainstorm ideas, create stories. It sparks your imaginations</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-container">
+            <div class="title-bar">
+                <img src="/assets/EasyAssist.png" id="bot-img" alt="botImage">
+                <div id="bot-name">
+                    <h1>EassyAssist</h1>
+                </div>
+                <div class="reset">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="icon-container" title="Change Transparency">
+                    <i class="fa fa-sliders"></i>
+                    <ul class="dropdown transparency-options">
+                      <li level='1'>Opaque</li>
+                      <li level='0.8'>20% Transparent</li>
+                      <li level='0.6'>40% Transparent</li>
+                      <li level='0.4'>60% Transparent</li>
+                      <li level='0.2'>80% Transparent</li>
+                      <li level='0'>Transparent</li>
+
+                    </ul>
+                  </div>
+                <div class="icon-container" title="Change Background">
+                    <i class="fa fa-image"></i>
+                    <ul class="dropdown background-options">
+                      <li data-image='nightSky'>night sky</li>
+                      <li data-image='sunset'>sunset</li>
+                      <li data-image='sunrise'>sunrise</li>
+                      <li data-image='cherryBlossom'>cherry blossom</li>
+                    </ul>
+                  </div>
+            </div>
+        
+            <div class="chat-area">
+                <div class="ai-chat-box">
+                    <img src="/assets/EasyAssist.png" alt="" id="aiImage" width="10%">
+                    <div class="ai-chat-area">
+                    <p>Hello ! How Can I Help you Today?</p>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="prompt-area">
+                <div class="message-bar">
+                    <input type="text" id="prompt" placeholder="Message...">
+
+                    <button id="submit"><i class="fa-brands fa-telegram"></i></button>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>  
+</body>
+</html>
