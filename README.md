@@ -1,4 +1,4 @@
-# 🤖 AI Chatbot Web App
+# 🤖 Whizz_chatApplication
 
 A simple and interactive AI-powered chatbot built using HTML, CSS, and JavaScript. This web app interacts with users through a sleek chat interface and uses an API to generate smart, human-like responses.
 
